@@ -1,0 +1,47 @@
+hydra:
+  job:
+    chdir: false
+
+# AZURE/OPENAI API SPECIFIC CONFIG
+api_params:
+  provider: ???
+  api_key: ???
+  resource: null
+  deployment_name: null
+  mode: completion
+  generation_params:
+    max_tokens: 150
+    temperature: 0
+    stop: null
+    n: 1
+
+# LOCAL SPECIFIC CONFIG
+generation_params:
+  max_tokens: 150
+  temperature: 0
+  stop: '\n'
+  n: 1
+  batch_size: 4
+
+# EXPERIMENT CONFIG
+model_name: ???  # the model name of the LM inferencer
+cache_dir: ???  # the cache dir of the transformers library
+task_name: ???
+input_file: ???
+# few-shot experiment parameters
+fewshot: false  # true or false
+fewshot_file: ???
+fewshot_k: 10
+fewshot_strategy: random
+# robustness analysis parameters
+format_id: ???  # the index of the prompt format to test
+order_id: 0  # the index of the prompt order to test
+# socio demographics parameters
+sociodemographics: true
+sociodemographic_attribute: ratings #[gender,race,education,age,political_affiliation] # [ratings] -> use original ratings
+# other parameters
+seed: 10
+input_dir: ???
+output_dir: ???
+n_process: 2
+test: true
