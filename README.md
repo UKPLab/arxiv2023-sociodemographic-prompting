@@ -2,10 +2,10 @@
 
 This repository includes the code for zero-shot prompting various subjective NLP tasks using sociodemographic information.
 
-Further details can be found in our publication [How (Not) to Use Sociodemographic Information for Subjective NLP Tasks](https://arxiv.org/abs/2309.07034v1).
+Further details can be found in our EACL 2024 publication [Sensitivity, Performance, Robustness: Deconstructing the Effect of Sociodemographic Prompting](https://arxiv.org/abs/2309.07034v2).
 
 
-> **Abstract:** Annotators' sociodemographic backgrounds (i.e., the individual compositions of their gender, age, educational background, etc.) have a strong impact on their decisions when working on subjective NLP tasks, such as hate speech detection. Often, heterogeneous backgrounds result in high disagreements. To model this variation, recent work has explored sociodemographic prompting, a technique, which steers the output of prompt-based models towards answers that humans with specific sociodemographic profiles would give. However, the available NLP literature disagrees on the efficacy of this technique -- it remains unclear, for which tasks and scenarios it can help and evaluations are limited to specific tasks only. We address this research gap by presenting the largest and most comprehensive study of sociodemographic prompting today. Concretely, we evaluate several prompt formulations across seven datasets and six instruction-tuned model families. We find that (1) while sociodemographic prompting can be beneficial for improving zero-shot learning in subjective NLP tasks, (2) its outcomes largely vary for different model types, sizes, and datasets, (3) are subject to large variance with regards to prompt formulations. Thus, sociodemographic prompting is not a reliable proxy for traditional data annotation with a sociodemographically heterogeneous group of annotators. Instead, we propose (4) to use it for identifying ambiguous instances resulting in more informed annotation efforts.
+> **Abstract:** Annotators' sociodemographic backgrounds (i.e., the individual compositions of their gender, age, educational background, etc.) have a strong impact on their decisions when working on subjective NLP tasks, such as toxic language detection. Often, heterogeneous backgrounds result in high disagreements. To model this variation, recent work has explored sociodemographic prompting, a technique, which steers the output of prompt-based models towards answers that humans with specific sociodemographic profiles would give. However, the available NLP literature disagrees on the efficacy of this technique - it remains unclear for which tasks and scenarios it can help, and the role of the individual factors in sociodemographic prompting is still unexplored. We address this research gap by presenting the largest and most comprehensive study of sociodemographic prompting today. We analyze its influence on model sensitivity, performance and robustness across seven datasets and six instruction-tuned model families. We show that sociodemographic information affects model predictions and can be beneficial for improving zero-shot learning in subjective NLP tasks. However, its outcomes largely vary for different model types, sizes, and datasets, and are subject to large variance with regards to prompt formulations. Most importantly, our results show that sociodemographic prompting should be used with care for sensitive applications, such as toxicity annotation or when studying LLM alignment.
 
 
 ## Information
@@ -103,7 +103,7 @@ Please use the following citation:
 
 ```
 @article{beck-etal-2023-sociodemographic-prompting,
-    title = "How (Not) to Use Sociodemographic Information for Subjective NLP Tasks",
+    title = "Sensitivity, Performance, Robustness: Deconstructing the Effect of Sociodemographic Prompting",
     author = "Beck, Tilman  and
       Schuff, Hendrik and Lauscher, Anne  and
       Gurevych, Iryna",
