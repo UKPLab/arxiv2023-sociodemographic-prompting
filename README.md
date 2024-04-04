@@ -2,10 +2,9 @@
 
 This repository includes the code for zero-shot prompting various subjective NLP tasks using sociodemographic information.
 
-Further details can be found in our EACL 2024 publication [Sensitivity, Performance, Robustness: Deconstructing the Effect of Sociodemographic Prompting](https://arxiv.org/abs/2309.07034v2).
+Further details can be found in our EACL 2024 publication [Sensitivity, Performance, Robustness: Deconstructing the Effect of Sociodemographic Prompting](https://aclanthology.org/2024.eacl-long.159/).
 
-
-> **Abstract:** Annotators' sociodemographic backgrounds (i.e., the individual compositions of their gender, age, educational background, etc.) have a strong impact on their decisions when working on subjective NLP tasks, such as toxic language detection. Often, heterogeneous backgrounds result in high disagreements. To model this variation, recent work has explored sociodemographic prompting, a technique, which steers the output of prompt-based models towards answers that humans with specific sociodemographic profiles would give. However, the available NLP literature disagrees on the efficacy of this technique - it remains unclear for which tasks and scenarios it can help, and the role of the individual factors in sociodemographic prompting is still unexplored. We address this research gap by presenting the largest and most comprehensive study of sociodemographic prompting today. We analyze its influence on model sensitivity, performance and robustness across seven datasets and six instruction-tuned model families. We show that sociodemographic information affects model predictions and can be beneficial for improving zero-shot learning in subjective NLP tasks. However, its outcomes largely vary for different model types, sizes, and datasets, and are subject to large variance with regards to prompt formulations. Most importantly, our results show that sociodemographic prompting should be used with care for sensitive applications, such as toxicity annotation or when studying LLM alignment.
+> **Abstract:** Annotators' sociodemographic backgrounds (i.e., the individual compositions of their gender, age, educational background, etc.) have a strong impact on their decisions when working on subjective NLP tasks, such as toxic language detection. Often, heterogeneous backgrounds result in high disagreements. To model this variation, recent work has explored sociodemographic prompting, a technique, which steers the output of prompt-based models towards answers that humans with specific sociodemographic profiles would give. However, the available NLP literature disagrees on the efficacy of this technique — it remains unclear for which tasks and scenarios it can help, and the role of the individual factors in sociodemographic prompting is still unexplored. We address this research gap by presenting the largest and most comprehensive study of sociodemographic prompting today. We use it to analyze its influence on model sensitivity, performance and robustness across seven datasets and six instruction-tuned model families. We show that sociodemographic information affects model predictions and can be beneficial for improving zero-shot learning in subjective NLP tasks.However, its outcomes largely vary for different model types, sizes, and datasets, and are subject to large variance with regards to prompt formulations. Most importantly, our results show that sociodemographic prompting should be used with care when used for data annotation or studying LLM alignment.
 
 
 ## Information
@@ -99,16 +98,23 @@ The minimal set of configuration parameters which need to be set are the followi
 
 ## Citing
 
-Please use the following citation:
+Please use the following citation from the [ACL Anthology](https://aclanthology.org/):
 
 ```
-@article{beck-etal-2023-sociodemographic-prompting,
+@inproceedings{beck-etal-2024-sensitivity,
     title = "Sensitivity, Performance, Robustness: Deconstructing the Effect of Sociodemographic Prompting",
     author = "Beck, Tilman  and
-      Schuff, Hendrik and Lauscher, Anne  and
+      Schuff, Hendrik  and
+      Lauscher, Anne  and
       Gurevych, Iryna",
-    year = "2023",
-    journal = "CoRR"
-    url = "https://arxiv.org/abs/2309.07034v1",
+    editor = "Graham, Yvette  and
+      Purver, Matthew",
+    booktitle = "Proceedings of the 18th Conference of the European Chapter of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = mar,
+    year = "2024",
+    address = "St. Julian{'}s, Malta",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.eacl-long.159",
+    pages = "2589--2615"
 }
 ```
